@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pelican.newspaper"
+
+    android:versionCode="1"
+    android:versionName="1.0">
+    <application
+        android:label="@string/app_name">
+        <activity android:name=".TopActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CurrentChannelActivity" android:label="CurrentChannelActivity">
+            <intent-filter>
+                <action android:name="com.pelican.newspaper" />
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ShowRssActivity" android:label="Show Rss Item">
+            <intent-filter>
+                <action android:name="com.pelican.newspaper" />
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

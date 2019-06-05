@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".TopActivity" >
+
+    <EditText
+        android:id="@+id/rssURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/textV"
+        android:text="https://xakep.ru/tag/linux/feed/"/>
+
+    <Button
+        android:id="@+id/openBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rssURL"
+        android:layout_below="@+id/addBtn"
+        android:layout_marginTop="21dp"
+        android:text="@string/Open" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rssURL"
+        android:layout_below="@+id/rssURL"
+        android:layout_marginTop="21dp"
+        android:text="@string/Add" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/delBtn"
+        android:layout_marginTop="21dp"
+        android:text="@string/Save" />
+
+    <Button
+        android:id="@+id/delBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rssURL"
+        android:layout_marginTop="21dp"
+        android:text="@string/Del" />
+
+    <Button
+        android:id="@+id/getBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rssURL"
+        android:layout_below="@+id/rssURL"
+        android:layout_marginTop="21dp"
+        android:text="@string/Get" />
+
+    <ListView
+        android:id="@+id/channelListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/openBtn"
+        android:layout_marginTop="21dp"
+        android:fadeScrollbars="false"
+        android:dividerHeight="2dp"/>
+
+
+
+</RelativeLayout>
+

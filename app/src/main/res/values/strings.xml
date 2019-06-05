@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Newspaper</string>
+    <string name="textV">Enter URL</string>
+    <string name="title_activity_show_news">Show News Activity</string>
+    <string name="title_activity_find_news">Find News Activity</string>
+    <string name="Get">Get News</string>
+    <string name="Add">Add URL</string>
+    <string name="Del">Del URL</string>
+    <string name="Open">Open File</string>
+    <string name="Save">Save File</string>
+</resources>
